@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282727;
+}
+    
+.box{
+    height: 75%;
+    width: 55%;
+    background: linear-gradient(to bottom, white 25%, rgb(212, 202, 17) 25%);
+    border-radius: 5px;
+}
+    
+.main {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-left: 14%;
+    }
+    
+    .img {
+    width: 47%;
+    height: 100%;
+    position: relative;
+    top: 3rem;
+    }
+    
+    .img img {
+    width: 80%;
+    height: 90%;
+    object-fit: cover;
+    }
+    
+    .dec {
+    width: 47%;
+    height: 100%;
+    text-align: center;
+    padding-top: 18%;
+    font-weight: bold;
+    margin-right: 10px;
+    }
+    
+    .dec h1, .dec p {
+    padding: 2%;
+    }
+    
+    .dec h1{
+    font-size: 2rem;
+    font-family: bold;
+    padding-top: 5%;
+    }
+    
+    .dec p{
+    font-weight: 550;
+    text-align:center;
+    font-size: 0.8rem;
+    }
+    .dec button {
+    margin-top: 1rem;
+    }
+    
+    .dec h3{
+    font-size: 1rem;
+    padding-top: 2%;
+    }
+    .dec h3 span{
+    text-decoration: underline;
+    }
+    
+    .dec button{
+    width: 8rem;
+    height: 2rem;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    } 
+
+
+    @media (max-width: 480px) {
+        .box {
+            width: 100%; 
+            height: auto; 
+        }
+
+        .main{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 1rem 2rem;
+            
+
+        }
+
+        .img{
+            width: 100%;
+            margin: auto;
+            padding-top: 1rem;
+        }
+    
+        .img img {
+            width: 100%; 
+        }
+    
+        .dec h1 {
+            font-size: 1.3rem; 
+            padding-top: 1rem;
+        }
+    
+        .dec p {
+            font-size: 0.6rem; 
+        }
+        .dec button{
+            width: 4rem;
+            height: 1.5rem;
+            font-size: 0.5rem ;
+        }
+        .dec h3{
+            font-size: 0.7rem;
+            }
+    }
+
+    @media (width <= 825px) and (width >= 480px){
+        .box {
+            width: 100%; 
+            height: auto; 
+        }
+
+        .main{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 1rem 2rem;
+            
+
+        }
+
+        .img{
+            width: 100%;
+            margin: auto;
+            padding-top: 1rem;
+            text-align: center;
+        }
+    
+        .img img {
+            width: 60%;   
+        }
+    }
+
+    @media (width >= 825px) and (width <= 1400px){
+        .box {
+            width: 70%; 
+            height: auto; 
+        }
+
+        .main{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .img{
+            width: 45%;
+            height: 60%;
+            margin: auto;
+            text-align: center;
+            top: 1rem;
+        }
+
+        .img img {
+            width: 50%;
+            height: 60%;
+            object-fit: cover;
+        }
+
+        .dec{
+            padding-top: 10%;
+            margin-right: 0px;
+        }
+        .dec h1 {
+            font-size: 1.5rem; 
+            padding-top: 1.2rem;
+        }
+        .dec button {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            }
+    }
